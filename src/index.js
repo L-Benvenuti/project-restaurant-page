@@ -4,9 +4,10 @@ import { footer } from './footer';
 import { home } from './home/home';
 import { contact } from './contact/contact';
 import { menu } from './menu/menu';
-import './style.css';
-
-console.log("It's working brotha!");
+import './style/initial.css';
+import './style/home.css';
+import './style/contact.css';
+import './style/menu.css';
 
 initialPage();
 nav();
