@@ -1,5 +1,5 @@
 import { menuItem } from './menu-items';
-import { appendContent } from './initial';
+import { appendContent } from '../initial';
 import Grass from './imgs/food-items/grass.jpg';
 import WaterPlants from './imgs/food-items/water-plants.jpg';
 import Grains from './imgs/food-items/grains.png';

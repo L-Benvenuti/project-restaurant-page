@@ -1,5 +1,5 @@
-import { appendContent } from './initial';
-import { form } from './contact-form';
+import { appendContent } from '../initial';
+import { form } from '../contact-form';
 
 export const contact = function () {
   const title = document.createElement('h1');

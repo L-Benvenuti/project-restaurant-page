@@ -1,4 +1,4 @@
-import { appendContent } from './initial';
+import { appendContent } from '../initial';
 import { boring } from './boring-dropdown';
 
 export const menu = function () {
@@ -36,9 +36,12 @@ export const menu = function () {
   menuSelection.addEventListener('change', () => { menuChange(); });
 
   function menuChange() {
-    const selection = document.getElementById('menuOptions');
-    if (selection.value === 'boring') {
+    if (menuSelection.value === 'boring') {
       boring();
+    } else if (menuSelection.value === 'interesting') {
+      console.log('interesting working');
+    } else if (menuSelection.value === 'death') {
+      console.log('death wish working too');
     }
   }
 

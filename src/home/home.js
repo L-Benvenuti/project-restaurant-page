@@ -1,4 +1,4 @@
-import { appendContent } from './initial';
+import { appendContent } from '../initial';
 import RestaurantImage from './imgs/location.png';
 
 export const home = function () {
