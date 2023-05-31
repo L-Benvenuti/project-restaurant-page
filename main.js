@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/boring-dropdown.js":
+/*!********************************!*\
+  !*** ./src/boring-dropdown.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"boring\": () => (/* binding */ boring)\n/* harmony export */ });\n/* harmony import */ var _menu_items__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu-items */ \"./src/menu-items.js\");\n/* harmony import */ var _initial__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./initial */ \"./src/initial.js\");\n/* harmony import */ var _imgs_food_items_grass_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./imgs/food-items/grass.jpg */ \"./src/imgs/food-items/grass.jpg\");\n/* harmony import */ var _imgs_food_items_water_plants_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./imgs/food-items/water-plants.jpg */ \"./src/imgs/food-items/water-plants.jpg\");\n/* harmony import */ var _imgs_food_items_grains_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./imgs/food-items/grains.png */ \"./src/imgs/food-items/grains.png\");\n/* harmony import */ var _imgs_food_items_melon_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./imgs/food-items/melon.jpg */ \"./src/imgs/food-items/melon.jpg\");\n/* harmony import */ var _imgs_food_items_reeds_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./imgs/food-items/reeds.jpg */ \"./src/imgs/food-items/reeds.jpg\");\n/* harmony import */ var _imgs_food_items_squash_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./imgs/food-items/squash.png */ \"./src/imgs/food-items/squash.png\");\n\n\n\n\n\n\n\n\n\nconst boring = () => {\n  const bMenu = document.createElement('div');\n  bMenu.classList = 'menuContainer';\n\n  const subtext = document.createElement('p');\n  subtext.classList = 'menuSubt';\n  subtext.innerText = 'I guess if you enjoy super boring food, these are for you'\n    + '\\nConsider these our low carbs (whatever that means...)';\n\n  const grass = new _menu_items__WEBPACK_IMPORTED_MODULE_0__.menuItem('Grass', 'The best grass you\\'ve ever eaten', _imgs_food_items_grass_jpg__WEBPACK_IMPORTED_MODULE_2__);\n  const grains = new _menu_items__WEBPACK_IMPORTED_MODULE_0__.menuItem('Grains', 'If you feel constipated, I\\'ve heard this helps', _imgs_food_items_grains_png__WEBPACK_IMPORTED_MODULE_4__);\n  const melon = new _menu_items__WEBPACK_IMPORTED_MODULE_0__.menuItem('Melon', 'Best fruit on the entire planet - better than the one your mom gets you', _imgs_food_items_melon_jpg__WEBPACK_IMPORTED_MODULE_5__);\n  const reeds = new _menu_items__WEBPACK_IMPORTED_MODULE_0__.menuItem('Reeds', 'Not even sure what this is, but yeah... delicious', _imgs_food_items_reeds_jpg__WEBPACK_IMPORTED_MODULE_6__);\n  const squash = new _menu_items__WEBPACK_IMPORTED_MODULE_0__.menuItem('Squash', 'Pretty good pumpkin wannabe', _imgs_food_items_squash_png__WEBPACK_IMPORTED_MODULE_7__);\n  const waterPlant = new _menu_items__WEBPACK_IMPORTED_MODULE_0__.menuItem('Water Plants', 'Another delicious green thing', _imgs_food_items_water_plants_jpg__WEBPACK_IMPORTED_MODULE_3__);\n\n  bMenu.append(\n    subtext,\n    grass.createItem(),\n    grains.createItem(),\n    melon.createItem(),\n    reeds.createItem(),\n    squash.createItem(),\n    waterPlant.createItem(),\n  );\n\n  (0,_initial__WEBPACK_IMPORTED_MODULE_1__.appendContent)(bMenu, 'main');\n};\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/boring-dropdown.js?");
+
+/***/ }),
+
 /***/ "./src/contact-form.js":
 /*!*****************************!*\
   !*** ./src/contact-form.js ***!
@@ -170,13 +180,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/menu-items.js":
+/*!***************************!*\
+  !*** ./src/menu-items.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menuItem\": () => (/* binding */ menuItem)\n/* harmony export */ });\nclass menuItem {\n  constructor(name, text, imgSrc) {\n    this.name = name;\n    this.text = text;\n    this.imgSrc = imgSrc;\n  }\n\n  createItem() {\n    const item = document.createElement('div');\n\n    const imgCont = document.createElement('div');\n    const img = new Image();\n    img.src = `${this.imgSrc}`;\n    imgCont.appendChild(img);\n\n    const content = document.createElement('div');\n    content.classList = 'menuContent';\n\n    const title = document.createElement('h1');\n    title.classList = 'item-Title';\n    title.innerText = `${this.name}`;\n\n    const description = document.createElement('p');\n    description.classList = 'item-desc';\n    description.innerText = `${this.text}`;\n\n    content.append(\n      title,\n      description,\n    );\n\n    item.append(\n      imgCont,\n      content,\n    );\n\n    return item;\n  }\n}\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/menu-items.js?");
+
+/***/ }),
+
 /***/ "./src/menu.js":
 /*!*********************!*\
   !*** ./src/menu.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _initial__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial */ \"./src/initial.js\");\n\n\nconst menu = function () {\n  const title = document.createElement('h1');\n  title.innerText = 'Food Options';\n\n  const subtext = document.createElement('h2');\n  subtext.innerText = 'This is the greatest menu in all history';\n\n  const p1 = document.createElement('p');\n  p1.innerText = 'Testing the logic for this';\n\n  const callToAction = document.createElement('h3');\n  callToAction.innerText = 'Eat with us please';\n\n  (0,_initial__WEBPACK_IMPORTED_MODULE_0__.appendContent)(title, 'main');\n  (0,_initial__WEBPACK_IMPORTED_MODULE_0__.appendContent)(subtext, 'main');\n  (0,_initial__WEBPACK_IMPORTED_MODULE_0__.appendContent)(p1, 'main');\n  (0,_initial__WEBPACK_IMPORTED_MODULE_0__.appendContent)(callToAction, 'main');\n};\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"menu\": () => (/* binding */ menu)\n/* harmony export */ });\n/* harmony import */ var _initial__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./initial */ \"./src/initial.js\");\n/* harmony import */ var _boring_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./boring-dropdown */ \"./src/boring-dropdown.js\");\n\n\n\nconst menu = function () {\n  const title = document.createElement('h1');\n  title.innerText = 'Food Options';\n\n  const subtext = document.createElement('h2');\n  subtext.innerText = 'This is the greatest menu in all history';\n\n  // dropdown selection\n  const menuSelection = document.createElement('select');\n  menuSelection.id = 'menuOptions';\n\n  const placeholder = document.createElement('option');\n  placeholder.innerText = 'Select your favorite menu:';\n  placeholder.disabled = true;\n  placeholder.selected = true;\n  const boringMenu = document.createElement('option');\n  boringMenu.innerText = 'Boring Menu';\n  boringMenu.value = 'boring';\n  const interestingMenu = document.createElement('option');\n  interestingMenu.innerText = 'Interesting Menu';\n  interestingMenu.value = 'interesting';\n  const deathWishMenu = document.createElement('option');\n  deathWishMenu.innerText = 'Death Wish Menu';\n  deathWishMenu.value = 'death';\n\n  menuSelection.append(\n    placeholder,\n    boringMenu,\n    interestingMenu,\n    deathWishMenu,\n  );\n\n  menuSelection.addEventListener('change', () => { menuChange(); });\n\n  function menuChange() {\n    const selection = document.getElementById('menuOptions');\n    if (selection.value === 'boring') {\n      (0,_boring_dropdown__WEBPACK_IMPORTED_MODULE_1__.boring)();\n    }\n  }\n\n  (0,_initial__WEBPACK_IMPORTED_MODULE_0__.appendContent)(title, 'main');\n  (0,_initial__WEBPACK_IMPORTED_MODULE_0__.appendContent)(subtext, 'main');\n  (0,_initial__WEBPACK_IMPORTED_MODULE_0__.appendContent)(menuSelection, 'main');\n};\n\n\n//# sourceURL=webpack://project-restaurant-page/./src/menu.js?");
 
 /***/ }),
 
@@ -197,6 +217,66 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"20905e002967bac66413.jpg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/imgs/capy.icon.jpg?");
+
+/***/ }),
+
+/***/ "./src/imgs/food-items/grains.png":
+/*!****************************************!*\
+  !*** ./src/imgs/food-items/grains.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"cd0ea16b1ee12d5df39e.png\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/imgs/food-items/grains.png?");
+
+/***/ }),
+
+/***/ "./src/imgs/food-items/grass.jpg":
+/*!***************************************!*\
+  !*** ./src/imgs/food-items/grass.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"a60484a300c3b6a5b72b.jpg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/imgs/food-items/grass.jpg?");
+
+/***/ }),
+
+/***/ "./src/imgs/food-items/melon.jpg":
+/*!***************************************!*\
+  !*** ./src/imgs/food-items/melon.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f28017dbb9716a1fa25c.jpg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/imgs/food-items/melon.jpg?");
+
+/***/ }),
+
+/***/ "./src/imgs/food-items/reeds.jpg":
+/*!***************************************!*\
+  !*** ./src/imgs/food-items/reeds.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"837c0ec4839debbad22a.jpg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/imgs/food-items/reeds.jpg?");
+
+/***/ }),
+
+/***/ "./src/imgs/food-items/squash.png":
+/*!****************************************!*\
+  !*** ./src/imgs/food-items/squash.png ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"575488011b0f8f87f985.png\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/imgs/food-items/squash.png?");
+
+/***/ }),
+
+/***/ "./src/imgs/food-items/water-plants.jpg":
+/*!**********************************************!*\
+  !*** ./src/imgs/food-items/water-plants.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b3577d324233fd3e6f39.jpg\";\n\n//# sourceURL=webpack://project-restaurant-page/./src/imgs/food-items/water-plants.jpg?");
 
 /***/ }),
 
