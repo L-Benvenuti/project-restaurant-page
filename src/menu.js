@@ -1,6 +1,5 @@
 import { appendContent } from './initial';
-import Grass from './imgs/grass.jpg';
-import { menuItem } from './menu-items';
+import { boring } from './boring-dropdown';
 
 export const menu = function () {
   const title = document.createElement('h1');
@@ -9,16 +8,12 @@ export const menu = function () {
   const subtext = document.createElement('h2');
   subtext.innerText = 'This is the greatest menu in all history';
 
-  const menuContainer = document.createElement('div');
-  menuContainer.classList = 'menuContainer';
-
-  const grass = new menuItem('Grass', 'The best grass you\'ve ever eaten', Grass);
-
-  console.log(grass);
-
-  menuContainer.appendChild(grass.createItem());
+  // need to create the dropdown selection
+  // then if condition for each selection to have different outcomes
+  // if (selection === 'boring') {boring();}
 
   appendContent(title, 'main');
   appendContent(subtext, 'main');
-  appendContent(menuContainer, 'main');
+
+  boring();
 };
