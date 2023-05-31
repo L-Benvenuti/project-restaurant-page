@@ -1,5 +1,5 @@
 import { appendContent } from '../initial';
-import { boring } from './boring-dropdown';
+import { menuChange } from './menu-selection';
 
 export const menu = function () {
   const title = document.createElement('h1');
@@ -7,6 +7,9 @@ export const menu = function () {
 
   const subtext = document.createElement('h2');
   subtext.innerText = 'This is the greatest menu in all history';
+
+  const menuContainer = document.createElement('div');
+  menuContainer.id = 'menuContainer';
 
   // dropdown selection
   const menuSelection = document.createElement('select');
@@ -35,17 +38,8 @@ export const menu = function () {
 
   menuSelection.addEventListener('change', () => { menuChange(); });
 
-  function menuChange() {
-    if (menuSelection.value === 'boring') {
-      boring();
-    } else if (menuSelection.value === 'interesting') {
-      console.log('interesting working');
-    } else if (menuSelection.value === 'death') {
-      console.log('death wish working too');
-    }
-  }
-
   appendContent(title, 'main');
   appendContent(subtext, 'main');
   appendContent(menuSelection, 'main');
+  appendContent(menuContainer, 'main');
 };

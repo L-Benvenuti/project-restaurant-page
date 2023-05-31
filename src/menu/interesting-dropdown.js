@@ -1,14 +1,8 @@
 import { menuItem } from './menu-items';
-import Grass from '../imgs/food-items/boring/grass.jpg';
-import WaterPlants from '../imgs/food-items/boring/water-plants.jpg';
-import Grains from '../imgs/food-items/boring/grains.png';
-import Melon from '../imgs/food-items/boring/melon.jpg';
-import Reeds from '../imgs/food-items/boring/reeds.jpg';
-import Squash from '../imgs/food-items/boring/squash.png';
 
-export const boring = () => {
-  const bMenu = document.createElement('div');
-  bMenu.classList = 'menuContainer';
+export const interesting = () => {
+  const iMenu = document.createElement('div');
+  iMenu.classList = 'menuContainer';
 
   const title = document.createElement('h1');
   title.classList = 'menuTitle';
@@ -17,7 +11,7 @@ export const boring = () => {
   const subtext = document.createElement('p');
   subtext.classList = 'menuSubt';
   subtext.innerText = 'I guess if you enjoy super boring food, these are for you'
-    + '\nConsider these our low carbs (whatever that means...)';
+      + '\nConsider these our low carbs (whatever that means...)';
 
   const grass = new menuItem('Grass', 'The best grass you\'ve ever eaten', Grass);
   const grains = new menuItem('Grains', 'If you feel constipated, I\'ve heard this helps', Grains);
@@ -26,7 +20,7 @@ export const boring = () => {
   const squash = new menuItem('Squash', 'Pretty good pumpkin wannabe', Squash);
   const waterPlant = new menuItem('Water Plants', 'Another delicious green thing', WaterPlants);
 
-  bMenu.append(
+  iMenu.append(
     title,
     subtext,
     grass.createItem(),
@@ -37,5 +31,5 @@ export const boring = () => {
     waterPlant.createItem(),
   );
 
-  return bMenu;
+  return iMenuMenu;
 };

@@ -1,5 +1,5 @@
 import { appendContent } from '../initial';
-import RestaurantImage from './imgs/location.png';
+import RestaurantImage from '../imgs/location.png';
 
 export const home = function () {
   const welcome = document.createElement('h1');
