@@ -19,6 +19,9 @@ export const death = () => {
   subtext.innerText = 'Well... we all know what these are...'
       + '\nDisclaimer: We take no responsibility for the outcome of eating these items.';
 
+  const itemCont = document.createElement('div');
+  itemCont.classList = 'itemContainer';
+
   const anemone = new menuItem('Anemone', 'The best grass you\'ve ever eaten', Anemone);
   const azalea = new menuItem('Azalea Leaves', 'If you feel constipated, I\'ve heard this helps', Azalea);
   const chinaberry = new menuItem('Chinaberries', 'Best fruit on the entire planet - better than the one your mom gets you', Chinaberry);
@@ -26,15 +29,19 @@ export const death = () => {
   const olander = new menuItem('Olander Plant', 'Pretty good pumpkin wannabe', Olander);
   const sagoPalm = new menuItem('Sago Palm', 'Another delicious green thing', SagoPalm);
 
-  dMenu.append(
-    title,
-    subtext,
+  itemCont.append(
     anemone.createItem(),
     azalea.createItem(),
     chinaberry.createItem(),
     lily.createItem(),
     olander.createItem(),
     sagoPalm.createItem(),
+  );
+
+  dMenu.append(
+    title,
+    subtext,
+    itemCont,
   );
 
   return dMenu;

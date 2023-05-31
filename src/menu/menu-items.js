@@ -7,10 +7,12 @@ export class menuItem {
 
   createItem() {
     const item = document.createElement('div');
+    item.classList = 'menuItem';
 
     const imgCont = document.createElement('div');
     const img = new Image();
     img.src = `${this.imgSrc}`;
+    img.classList = 'itemImg';
     imgCont.appendChild(img);
 
     const content = document.createElement('div');

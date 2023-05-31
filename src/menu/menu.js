@@ -46,6 +46,7 @@ export const menu = function () {
 
   appendContent(title, 'main');
   appendContent(subtext, 'main');
+  appendContent(text, 'main');
   appendContent(menuSelection, 'main');
   appendContent(menuContainer, 'main');
 };

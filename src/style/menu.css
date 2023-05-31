@@ -1,0 +1,43 @@
+.menuTitle,
+.menuSubt,
+.menuText {
+    text-align: center;
+}
+
+#menuOptions {
+    width: fit-content;
+}
+
+.menuItem {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 3px solid #355264;
+    border-radius: 20px;
+    padding: 20px;
+    width: 10em;
+    height: 15em;
+    gap: 15px;
+}
+
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 30px;
+}
+
+.itemContainer > * {
+    flex: 1 1 30%;
+    flex-shrink: 1;
+}
+
+.itemImg {
+    width: 15em;
+    height: auto;
+}
+
+.item-desc {
+    flex: 1;
+    flex-wrap: wrap;
+}

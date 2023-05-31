@@ -19,6 +19,9 @@ export const boring = () => {
   subtext.innerText = 'I guess if you enjoy super boring food, these are for you'
     + '\nConsider these our low carbs (whatever that means...)';
 
+  const itemCont = document.createElement('div');
+  itemCont.classList = 'itemContainer';
+
   const grass = new menuItem('Grass', 'The best grass you\'ve ever eaten', Grass);
   const grains = new menuItem('Grains', 'If you feel constipated, I\'ve heard this helps', Grains);
   const melon = new menuItem('Melon', 'Best fruit on the entire planet - better than the one your mom gets you', Melon);
@@ -26,15 +29,19 @@ export const boring = () => {
   const squash = new menuItem('Squash', 'Pretty good pumpkin wannabe', Squash);
   const waterPlant = new menuItem('Water Plants', 'Another delicious green thing', WaterPlants);
 
-  bMenu.append(
-    title,
-    subtext,
+  itemCont.append(
     grass.createItem(),
     grains.createItem(),
     melon.createItem(),
     reeds.createItem(),
     squash.createItem(),
     waterPlant.createItem(),
+  );
+
+  bMenu.append(
+    title,
+    subtext,
+    itemCont,
   );
 
   return bMenu;

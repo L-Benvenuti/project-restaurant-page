@@ -19,6 +19,9 @@ export const interesting = () => {
   subtext.innerText = 'Now we\'re talking! Nothing like some human food!'
       + '\nEnjoy every last bite!';
 
+  const itemCont = document.createElement('div');
+  itemCont.classList = 'itemContainer';
+
   const tacos = new menuItem('Tacos', 'The best grass you\'ve ever eaten', Tacos);
   const pizza = new menuItem('Pizza', 'If you feel constipated, I\'ve heard this helps', Pizza);
   const wings = new menuItem('Wings', 'Best fruit on the entire planet - better than the one your mom gets you', Wings);
@@ -26,15 +29,19 @@ export const interesting = () => {
   const cknfries = new menuItem('Nuggies & Fries', 'Pretty good pumpkin wannabe', Cknfries);
   const burger = new menuItem('Juicy Burger', 'Another delicious green thing', Burger);
 
-  iMenu.append(
-    title,
-    subtext,
+  itemCont.append(
     tacos.createItem(),
     pizza.createItem(),
     wings.createItem(),
     pasta.createItem(),
     cknfries.createItem(),
     burger.createItem(),
+  );
+
+  iMenu.append(
+    title,
+    subtext,
+    itemCont,
   );
 
   return iMenu;
