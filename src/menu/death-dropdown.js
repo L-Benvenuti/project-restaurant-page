@@ -10,6 +10,9 @@ export const death = () => {
   const dMenu = document.createElement('div');
   dMenu.classList = 'menuContainer';
 
+  const textContent = document.createElement('div');
+  textContent.classList = 'text-content';
+
   const title = document.createElement('h1');
   title.classList = 'menuTitle';
   title.innerText = 'Death Wish Menu';
@@ -18,6 +21,11 @@ export const death = () => {
   subtext.classList = 'menuSubt';
   subtext.innerText = 'Well... we all know what these are...'
       + '\nDisclaimer: We take no responsibility for the outcome of eating these items.';
+
+  textContent.append(
+    title,
+    subtext,
+  );
 
   const itemCont = document.createElement('div');
   itemCont.classList = 'itemContainer';
@@ -39,8 +47,7 @@ export const death = () => {
   );
 
   dMenu.append(
-    title,
-    subtext,
+    textContent,
     itemCont,
   );
 

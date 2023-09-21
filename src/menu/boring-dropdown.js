@@ -10,6 +10,9 @@ export const boring = () => {
   const bMenu = document.createElement('div');
   bMenu.classList = 'menuContainer';
 
+  const textContent = document.createElement('div');
+  textContent.classList = 'text-content';
+
   const title = document.createElement('h1');
   title.classList = 'menuTitle';
   title.innerText = 'Boring Menu';
@@ -18,6 +21,11 @@ export const boring = () => {
   subtext.classList = 'menuSubt';
   subtext.innerText = 'I guess if you enjoy super boring food, these are for you'
     + '\nConsider these our low carbs (whatever that means...)';
+
+  textContent.append(
+    title,
+    subtext,
+  );
 
   const itemCont = document.createElement('div');
   itemCont.classList = 'itemContainer';
@@ -39,8 +47,7 @@ export const boring = () => {
   );
 
   bMenu.append(
-    title,
-    subtext,
+    textContent,
     itemCont,
   );
 

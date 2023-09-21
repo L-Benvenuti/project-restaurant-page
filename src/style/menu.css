@@ -1,43 +1,70 @@
-.menuTitle,
-.menuSubt,
-.menuText {
-    text-align: center;
+div.top-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.top-text h1 {
+    font-size: 4em;
+}
+
+div.top-text h2 {
+    font-size: 2em;
+}
+
+div.top-text p {
+    font-size: 1.5em;
+    color: gray;
+}
+
+.selection-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #menuOptions {
     width: fit-content;
+    padding: 1em;
+    margin-top: 1.5em;
+    border: none;
+    background-color: #8FB2C5;
+    border-radius: 1em;
+    color: white;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
 }
 
 .menuItem {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     border: 3px solid #355264;
     border-radius: 20px;
-    padding: 20px;
-    width: 10em;
-    height: 15em;
-    gap: 15px;
+    padding: 2em;
+    margin-top: 30px;
+    min-height: 20em;
 }
 
 .itemContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
-    margin-top: 30px;
+    gap: 1.5em;
 }
 
 .itemContainer > * {
     flex: 1 1 30%;
-    flex-shrink: 1;
 }
 
-.itemImg {
-    width: 15em;
-    height: auto;
-}
-
-.item-desc {
-    flex: 1;
-    flex-wrap: wrap;
+img.itemImg {
+    min-width: 15em;
 }

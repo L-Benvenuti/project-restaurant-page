@@ -2,6 +2,9 @@ import { appendContent } from '../initial';
 import { menuChange } from './menu-selection';
 
 export const menu = function () {
+  const container = document.createElement('div');
+  container.classList = 'top-text';
+
   const title = document.createElement('h1');
   title.classList = 'menuTitle';
   title.innerText = 'Food Options';
@@ -14,10 +17,18 @@ export const menu = function () {
   text.classList = 'menuText';
   text.innerText = 'or at least one is...';
 
+  container.append(
+    title,
+    subtext,
+    text,
+  );
+
   const menuContainer = document.createElement('div');
   menuContainer.id = 'menuContainer';
 
   // dropdown selection
+  const selectContainer = document.createElement('div');
+  selectContainer.classList = 'selection-container';
   const menuSelection = document.createElement('select');
   menuSelection.id = 'menuOptions';
 
@@ -42,11 +53,11 @@ export const menu = function () {
     deathWishMenu,
   );
 
+  selectContainer.appendChild(menuSelection);
+
   menuSelection.addEventListener('change', () => { menuChange(); });
 
-  appendContent(title, 'main');
-  appendContent(subtext, 'main');
-  appendContent(text, 'main');
-  appendContent(menuSelection, 'main');
+  appendContent(container, 'main');
+  appendContent(selectContainer, 'main');
   appendContent(menuContainer, 'main');
 };

@@ -10,6 +10,9 @@ export const interesting = () => {
   const iMenu = document.createElement('div');
   iMenu.classList = 'menuContainer';
 
+  const textContent = document.createElement('div');
+  textContent.classList = 'text-content';
+
   const title = document.createElement('h1');
   title.classList = 'menuTitle';
   title.innerText = 'Interesting Menu';
@@ -18,6 +21,11 @@ export const interesting = () => {
   subtext.classList = 'menuSubt';
   subtext.innerText = 'Now we\'re talking! Nothing like some human food!'
       + '\nEnjoy every last bite!';
+
+  textContent.append(
+    title,
+    subtext,
+  );
 
   const itemCont = document.createElement('div');
   itemCont.classList = 'itemContainer';
@@ -39,8 +47,7 @@ export const interesting = () => {
   );
 
   iMenu.append(
-    title,
-    subtext,
+    textContent,
     itemCont,
   );
 
