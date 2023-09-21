@@ -1,10 +1,10 @@
 import { menuItem } from './menu-items';
-import Anemone from '../imgs/food-items/deathWish/anemone.jpeg';
-import Azalea from '../imgs/food-items/deathWish/azalea.jpg';
-import Chinaberry from '../imgs/food-items/deathWish/chinaberries.jpg';
+import Anemone from '../imgs/food-items/deathWish/anemone.png';
+import Azalea from '../imgs/food-items/deathWish/azalea.png';
+import Chinaberry from '../imgs/food-items/deathWish/chinaberries.png';
 import Lily from '../imgs/food-items/deathWish/lily.png';
 import Olander from '../imgs/food-items/deathWish/olander.png';
-import SagoPalm from '../imgs/food-items/deathWish/sago-palm.jpg';
+import SagoPalm from '../imgs/food-items/deathWish/sago-palm.png';
 
 export const death = () => {
   const dMenu = document.createElement('div');

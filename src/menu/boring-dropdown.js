@@ -1,9 +1,9 @@
 import { menuItem } from './menu-items';
-import Grass from '../imgs/food-items/boring/grass.jpg';
-import WaterPlants from '../imgs/food-items/boring/water-plants.jpg';
+import Grass from '../imgs/food-items/boring/grass.png';
+import WaterPlants from '../imgs/food-items/boring/water-plants.png';
 import Grains from '../imgs/food-items/boring/grains.png';
-import Melon from '../imgs/food-items/boring/melon.jpg';
-import Reeds from '../imgs/food-items/boring/reeds.jpg';
+import Melon from '../imgs/food-items/boring/melon.png';
+import Reeds from '../imgs/food-items/boring/reeds.png';
 import Squash from '../imgs/food-items/boring/squash.png';
 
 export const boring = () => {
