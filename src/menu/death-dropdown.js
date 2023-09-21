@@ -30,12 +30,12 @@ export const death = () => {
   const itemCont = document.createElement('div');
   itemCont.classList = 'itemContainer';
 
-  const anemone = new menuItem('Anemone', 'The best grass you\'ve ever eaten', Anemone);
-  const azalea = new menuItem('Azalea Leaves', 'If you feel constipated, I\'ve heard this helps', Azalea);
-  const chinaberry = new menuItem('Chinaberries', 'Best fruit on the entire planet - better than the one your mom gets you', Chinaberry);
-  const lily = new menuItem('Lilies', 'Not even sure what this is, but yeah... delicious', Lily);
-  const olander = new menuItem('Olander Plant', 'Pretty good pumpkin wannabe', Olander);
-  const sagoPalm = new menuItem('Sago Palm', 'Another delicious green thing', SagoPalm);
+  const anemone = new menuItem('Anemone', 'Blisters, hemorrhagic gastritis, shock, convulsions, and of course death...', Anemone);
+  const azalea = new menuItem('Azalea Leaves', 'Some seizures, maybe a little indigestion, diarrhoea, and yeah... that too', Azalea);
+  const chinaberry = new menuItem('Chinaberries', 'Drooling, diarrhoea, depression... and another D word...', Chinaberry);
+  const lily = new menuItem('Lilies', 'Kidney failure within 36-72 hours which you know what means...', Lily);
+  const olander = new menuItem('Olander Plant', 'Well, if this can kill a horse in minutes... imagine you, a tiny little chubby capy', Olander);
+  const sagoPalm = new menuItem('Sago Palm', 'Since all parts are poisonous, there\'s no margin of error over here. Besides increased thirst and lethargy, you die', SagoPalm);
 
   itemCont.append(
     anemone.createItem(),

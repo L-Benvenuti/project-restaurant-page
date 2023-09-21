@@ -30,12 +30,12 @@ export const interesting = () => {
   const itemCont = document.createElement('div');
   itemCont.classList = 'itemContainer';
 
-  const tacos = new menuItem('Tacos', 'The best grass you\'ve ever eaten', Tacos);
-  const pizza = new menuItem('Pizza', 'If you feel constipated, I\'ve heard this helps', Pizza);
-  const wings = new menuItem('Wings', 'Best fruit on the entire planet - better than the one your mom gets you', Wings);
-  const pasta = new menuItem('Spaghetti Meatballs', 'Not even sure what this is, but yeah... delicious', Pasta);
-  const cknfries = new menuItem('Nuggies & Fries', 'Pretty good pumpkin wannabe', Cknfries);
-  const burger = new menuItem('Juicy Burger', 'Another delicious green thing', Burger);
+  const tacos = new menuItem('Tacos', 'A must try in this place! Choose any meat options and salivate your way out', Tacos);
+  const pizza = new menuItem('Pizza', 'The cheese pull in this one... gotta say, mouth watering', Pizza);
+  const wings = new menuItem('Wings', 'So many sauce options it makes it hard to choose just one - that\'s why you can have up to 5', Wings);
+  const pasta = new menuItem('Spaghetti Meatballs', 'If you wanna bring a date and feel like the Lady and the Tramp, this is the perfect meal for you ', Pasta);
+  const cknfries = new menuItem('Nuggies & Fries', 'Simple and delicious, what else can you ask for?!', Cknfries);
+  const burger = new menuItem('Juicy Burger', 'FYI this is cow meat, no worries we are not cannibals', Burger);
 
   itemCont.append(
     tacos.createItem(),
