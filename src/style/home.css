@@ -11,16 +11,22 @@
 
 .block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* grid-template-columns: 0.4fr 1fr;
-    align-items: center; */
     padding: 25px;
-    gap: 50px;
+    gap: 25px;
+}
+
+.bLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 35em;
 }
 
 .bLeft > img {
-    width: 45em;
+    width: 100%;
 }
 
 .bRight {
