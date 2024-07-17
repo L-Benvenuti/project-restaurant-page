@@ -1,5 +1,5 @@
 export const initialPage = function () {
-  const content = document.getElementById('content');
+  const content = document.body;
 
   const nav = document.createElement('nav');
   nav.setAttribute('id', 'nav');

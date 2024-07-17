@@ -8,7 +8,7 @@ export const contact = function () {
 
   const p1 = document.createElement('p');
   p1.classList = 'contText';
-  p1.innerText = 'If you are here to complain don\'t even bother';
+  p1.innerText = 'Hopefully you enjoyed your food...';
 
   appendContent(title, 'main');
   appendContent(p1, 'main');

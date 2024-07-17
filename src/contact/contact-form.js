@@ -15,7 +15,7 @@ export const form = function () {
 
   const tLabel = document.createElement('label');
   tLabel.setAttribute('for', 'phone');
-  tLabel.innerText = 'Phone Number: ';
+  tLabel.innerText = `Phone Number: \n(no - or spaces please)`;
   const tel = document.createElement('input');
   tel.setAttribute('type', 'number');
   tel.setAttribute('name', 'phone');
@@ -62,12 +62,9 @@ export const form = function () {
     console.log('the button works at least');
 
     if (!name.value || !tel.value || !email.value || !feedback.value) {
-      alert('Come on man, you either forgot to fill out the whole form or you messed it up...'
-        + '\nNow go back and please fill everything out this time');
+      alert('Some fields may have been forgotten. Please fill out the form completely.');
     } else {
-      alert('Actually, we thought this through and we really don\'t care about your feedback.'
-          + '\nIf we\'re not good enough for you, you can stay home.'
-          + '\nIf it was good feedback... well, we didn\'t think that far... thanks I guess?');
+      alert('Really appreciate your feedback. The data from this form does not go anywhere though.');
     }
   }
 
